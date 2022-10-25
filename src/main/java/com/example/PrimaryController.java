@@ -3,6 +3,8 @@ package com.example;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.example.classes.Carta;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -19,29 +21,28 @@ public class PrimaryController {
     @FXML private Label pontosJogador;
     @FXML private Label resultado;
 
-    public void turno(){
+    public void turno() {
 
     }
 
-    public void atualizar(){
+    public void atualizar() {
         
     }
 
-    public void novoJogo(){
+    public void novoJogo() {
 
     }
 
-    public void pedirCarta(){
+    public void pedirCarta() {
 
     }
 
-    public void parar(){
+    public void parar() {
 
     }
     
 
-    // private ImageView imagemCarta(Carta carta) {
-    //    return new ImageView(App.class.getResource(carta.imagePath()).toString());
-    // }
-
+    private ImageView imagemCarta(Carta carta) {
+       return new ImageView(App.class.getResource(carta.imagePath()).toString());
+    }
 }

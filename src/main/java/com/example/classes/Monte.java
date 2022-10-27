@@ -8,7 +8,19 @@ public class Monte {
     private List<Carta> cartas = new ArrayList<Carta>();
 
     public Monte() {
-        
+        for (int i = 2; i < 14; i++) {
+            Carta carta = new Carta(i, Naipe.Clubs);
+            cartas.add(carta);
+
+            carta = new Carta(i, Naipe.Diamonds);
+            cartas.add(carta);
+
+            carta = new Carta(i, Naipe.Hearts);
+            cartas.add(carta);
+
+            carta = new Carta(i, Naipe.Spades);
+            cartas.add(carta);
+        }
     }
 
     public void embaralhar() {
@@ -16,9 +28,6 @@ public class Monte {
     }
 
     public Carta virar() {
-        Carta carta = cartas.get(0);
-        cartas.remove(0);
-
-        return carta;
+        return cartas.remove(0);
     }
 }

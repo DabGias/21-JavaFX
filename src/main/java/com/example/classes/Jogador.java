@@ -13,7 +13,13 @@ public class Jogador {
     }
 
     public void receberCarta(Carta carta) {
-        setPontos(pontos + carta.getNumero());
+        if (carta.getNumero() == 10 || carta.getNumero() == 12 || carta.getNumero() == 13) {
+            setPontos(this.pontos + 10);
+        } else {
+            setPontos(this.pontos + carta.getNumero());
+        }
+
+        cartas.add(carta);
     }
 
     public void parar() {

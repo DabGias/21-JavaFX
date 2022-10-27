@@ -13,7 +13,11 @@ public class Carta {
         if (this.numero == 11) {
             return "classic-cards/Ace" + this.naipe + ".png"; 
         } else if (this.numero == 10) {
-            // TODO: Arrumar essa bagaça doida que eu não sei como vou retornar a carta certa
+            return "classic-cards/King" + this.naipe + ".png";
+        } else if (this.numero == 12) {
+            return "classic-cards/Queen" + this.naipe + ".png";
+        } else if (this.numero == 13) {
+            return "classic-cards/Jack" + this.naipe + ".png";
         }
 
         return "classic-cards/" + this.numero + this.naipe + ".png";

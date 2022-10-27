@@ -14,21 +14,21 @@
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
    <children>
-      <Label fx:id="pontosMesa" text="Mesa" textFill="WHITE">
+      <Label fx:id="labelPontosMesa" text="Mesa" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="23.0" />
          </font>
       </Label>
-      <HBox fx:id="mesaDoComputador" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
-      <HBox fx:id="mesaDoJogador" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
-      <Label fx:id="pontosJogador" layoutX="190.0" layoutY="30.0" text="Você" textFill="WHITE">
+      <HBox fx:id="hBoxMesaDoComputador" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <HBox fx:id="hBoxMesaDoJogador" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <Label fx:id="labelPontosJogador" layoutX="190.0" layoutY="30.0" text="Você" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="23.0" />
          </font>
       </Label>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <ImageView fx:id="monte" fitHeight="95.0" fitWidth="77.0" onMouseClicked="#pedirCarta" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgViewMonte" fitHeight="95.0" fitWidth="77.0" onMouseClicked="#pedirCarta" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@classic-cards/BackVertical.png" />
                </image>
@@ -48,7 +48,7 @@
             </Button>
          </children>
       </HBox>
-      <Label fx:id="resultado" layoutX="292.0" layoutY="359.0" textFill="WHITE">
+      <Label fx:id="labelResultado" layoutX="292.0" layoutY="359.0" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="23.0" />
          </font>

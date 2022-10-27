@@ -2,9 +2,12 @@ package com.example.classes;
 
 public class Computador extends Jogador {
     @Override
-    public void setParou(boolean parou) {
+    public boolean isParou() {
         if (this.getPontos() > 16) {
-            super.setParou(parou);
+            return true;
         }
+
+        return false;
     }
+    
 }
